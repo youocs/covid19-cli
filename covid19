@@ -11,8 +11,8 @@ if len(sys.argv) != 3:
 #Opens the covid19 API (https://covid19api.com/)
 API_URL = "https://api.covid19api.com/summary"
 with urllib.request.urlopen(API_URL) as response:
-	html = response.read()
-	data = json.loads(html)
+	JSON = response.read()
+	data = json.loads(JSON)
 	
 	if sys.argv[1] == "countries":
 		print("global")
