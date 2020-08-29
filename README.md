@@ -24,7 +24,7 @@ attributes | Lists attributes
 To execute a command:
  
  ```ini
- ./polybar-scripts/covid19 <command>
+ ./covid19 <command>
  ```
 
 ## Module
