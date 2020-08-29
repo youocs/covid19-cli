@@ -10,7 +10,7 @@ if len(argv) != 2 and len(argv) != 3:
         exit()
 
 if len(argv) == 2 and argv[1] != "countries" and argv[1] != "attributes":
-        print("Commands:\n  countries     Lists available countries\n  attributes      Lists all attributes\nUsage:\n  covid19 country attribute")
+        print("Commands:\n  countries     Lists available countries\n  attributes      Lists all attributes\nUsage: covid19 country attribute")
         exit()
 
 #Opens the covid19 API (https://covid19api.com/)
@@ -37,8 +37,8 @@ with urllib.request.urlopen(API_URL) as response:
 
                 #Iterates over the data until it finds the requested country's segment
                 for i in data["Countries"]:
-                        if i["Slug"].lower() == country.lower():
+                        if i["Slug"].lower() == country.lower() and attribute in i:
                                 print(attribute, ": ", i[attribute], sep="")
                                 exit()
 
-                print("Incorrect country or attribute.")
+                print("Incorrect country or attribute")
