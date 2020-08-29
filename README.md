@@ -1,6 +1,6 @@
 # polybar-covid19
 
-A script that pulls covid19 numbers from the COVID19 API (https://covid19api.com/)
+A script that pulls covid19 numbers from the COVID19 API (https://covid19api.com/).
 
 ![Alt text](https://i.ibb.co/d70DW32/oie-b-GGpq-RBHARnh.png)
 
@@ -10,11 +10,22 @@ A script that pulls covid19 numbers from the COVID19 API (https://covid19api.com
 
 ## Usage
 
+Make sure that the file is an executable.
+
+```ini
+chmod +x ~/polybar-scripts/polybar-covid19
+```
+
 Command | Description
 ---|---
 countries  | Lists available countries
 attributes | Lists attributes
 
+To execute a command:
+ 
+ ```ini
+ ./covid19 <command>
+ ```
 
 ## Module
 
