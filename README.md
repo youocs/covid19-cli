@@ -8,6 +8,6 @@
 ```ini
 [module/covid19]
 type = custom/script
-exec = "~/covid19 saudi-arabia NewConfirmed"
+exec = "~/polybar-scripts/covid19 <country> <attribute>"
 interval = 1800
 ```
