@@ -13,7 +13,7 @@ A script that pulls covid19 numbers from the COVID19 API (https://covid19api.com
 Make sure that the file is executable.
 
 ```ini
-chmod +x ~/polybar-scripts/polybar-covid19
+chmod +x ~/polybar-scripts/covid19.py
 ```
 
 Command | Description
@@ -32,6 +32,6 @@ To execute a command:
 ```ini
 [module/covid19]
 type = custom/script
-exec = "~/polybar-scripts/covid19 <country> <attribute>"
+exec = "~/polybar-scripts/covid19.py <country> <attribute>"
 interval = 1800
 ```
