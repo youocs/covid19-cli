@@ -1,4 +1,5 @@
 # covid19-polybar
+A script that pulls covid19 numbers from the COVID19 API (https://covid19api.com/)
 
 ## Dependencies
 * Python3
