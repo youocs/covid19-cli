@@ -10,7 +10,7 @@ A script that pulls covid19 numbers from the COVID19 API (https://covid19api.com
 
 ## Usage
 
-Make sure that the file is an executable.
+Make sure that the file is executable.
 
 ```ini
 chmod +x ~/polybar-scripts/polybar-covid19
