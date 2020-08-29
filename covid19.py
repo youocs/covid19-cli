@@ -30,7 +30,7 @@ with urllib.request.urlopen(API_URL) as response:
                         print(i)
 
         elif argv[1].lower() == "global":
-                print(data["Global"][sys.argv[2]])
+                print(data["Global"][argv[2]])
         else:
                 country = argv[1]
                 attribute = argv[2]
